@@ -1,4 +1,4 @@
-ifeq ($(TARGET_DEVICE),fortuna3g)
+ifeq ($(TARGET_DEVICE),j3ltespr)
 
 ifeq ($(TARGET_PROVIDES_CAMERA_HAL),true)
 

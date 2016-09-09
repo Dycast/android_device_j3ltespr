@@ -1,4 +1,4 @@
-ifeq ($(TARGET_DEVICE),fortuna3g)
+ifeq ($(TARGET_DEVICE),j3ltespr)
 LOCAL_PATH := $(call my-dir)
 include $(all-subdir-makefiles)
 include $(CLEAR_VARS)

@@ -1,8 +1,8 @@
-# Device tree for Samsung Grand Prime SM-G530H (XXU)
+# Device tree for Samsung J3 SM-J320P (XXU)
 
 ### Specs (Physically inspected):
   - CPU: Qualcomm MSM8216 Snapdragon 410, 1200 MHz
-  - Codename: FORTUNA3G
+  - Codename: j3ltespr
   - Display Panel:
   - Display Resolution: 960x540
   - EMMC:

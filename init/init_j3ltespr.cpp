@@ -51,11 +51,11 @@ void vendor_load_properties()
 
     property_get("ro.bootloader", bootloader);
 
-    property_set("ro.build.fingerprint", "samsung/fortuna3gxx/fortuna3g:5.0.2/LRX22G/G530HXXU2BPG1:user/release-keys");
-    property_set("ro.build.description", "fortuna3gxx-user 5.0.2 LRX22G G530HXXU2BPG1 release-keys");
+    property_set("ro.build.fingerprint", "samsung/j3ltesprxx/j3ltespr:5.1.1/LRX22G/G530HXXU2BPG1:user/release-keys");
+    property_set("ro.build.description", "j3ltesprxx-user 5.0.2 LRX22G G530HXXU2BPG1 release-keys");
     
-	property_set("ro.product.model", "SM-G530H");
-    property_set("ro.product.device", "fortuna3g");
+	property_set("ro.product.model", "SM-J320P");
+    property_set("ro.product.device", "j3ltespr");
    
     property_get("ro.product.device", device);
     strlcpy(devicename, device, sizeof(devicename));

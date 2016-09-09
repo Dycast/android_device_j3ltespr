@@ -1,14 +1,14 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Also get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/fortuna3g/fortuna3g-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/j3ltespr/j3ltespr-common-vendor.mk)
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Common overlay
-DEVICE_PACKAGE_OVERLAYS += device/samsung/fortuna3g/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/j3ltespr/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -259,7 +259,7 @@ else
 endif
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_DEVICE := fortuna3g
-PRODUCT_NAME := cm_fortuna3g
+PRODUCT_DEVICE := j3ltespr
+PRODUCT_NAME := cm_j3ltespr
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung

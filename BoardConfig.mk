@@ -2,14 +2,14 @@
 -include device/samsung/qcom-common/BoardConfigCommon.mk
 
 # Inherit from the proprietary version
--include vendor/samsung/fortuna3g/BoardConfigVendor.mk
+-include vendor/samsung/j3ltespr/BoardConfigVendor.mk
 
-LOCAL_PATH := device/samsung/fortuna3g
+LOCAL_PATH := device/samsung/j3ltespr
 
 #BLOCK_BASED_OTA := false
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := samsung_sm_g530h,fortunave3g,fortuna3g
+TARGET_OTA_ASSERT_DEVICE := SM-J320P,j3ltespr,J320P
 
 # Platform
 TARGET_BOARD_PLATFORM           := msm8916
@@ -45,9 +45,9 @@ BOARD_RAMDISK_OFFSET         := 0x02000000
 BOARD_KERNEL_TAGS_OFFSET     := 0x01e00000
 BOARD_KERNEL_PAGESIZE        := 2048
 BOARD_KERNEL_SEPARATED_DT    := true
-TARGET_KERNEL_SOURCE         := kernel/samsung/fortunaxx3g
+TARGET_KERNEL_SOURCE         := kernel/samsung/j3ltespr
 #TARGET_KERNEL_CUSTOM_TOOLCHAIN  := arm-eabi-4.7
-TARGET_KERNEL_CONFIG             := msm8916_fortuna3g_eur_defconfig
+TARGET_KERNEL_CONFIG             := msm8916_j3ltespr_eur_defconfig
 
 # Partition sizes
 TARGET_USERIMAGES_USE_EXT4          := true
@@ -93,7 +93,7 @@ BOARD_HAVE_BLUETOOTH_QCOM                   := true
 BLUETOOTH_HCI_USE_MCT                       := true
 
 # Custom RIL class
-BOARD_RIL_CLASS                     := ../../../device/samsung/fortuna3g/ril/
+BOARD_RIL_CLASS                     := ../../../device/samsung/j3ltespr/ril/
 PROTOBUF_SUPPORTED                  := true
 #USE_DEVICE_SPECIFIC_DATASERVICES    := true
 
@@ -102,8 +102,8 @@ EXTENDED_FONT_FOOTPRINT             := true
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE                := true
-TARGET_INIT_VENDOR_LIB               := libinit_fortuna3g
-TARGET_RECOVERY_DEVICE_MODULES       := libinit_fortuna3g
+TARGET_INIT_VENDOR_LIB               := libinit_j3ltespr
+TARGET_RECOVERY_DEVICE_MODULES       := libinit_j3ltespr
 
 # Audio
 BOARD_USES_ALSA_AUDIO                := true
@@ -191,4 +191,4 @@ TARGET_RELEASETOOLS_EXTENSIONS                  := $(LOCAL_PATH)
 include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
-   device/samsung/fortuna3g/sepolicy
+   device/samsung/j3ltespr/sepolicy
