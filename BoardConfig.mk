@@ -47,7 +47,7 @@ BOARD_KERNEL_PAGESIZE        := 2048
 BOARD_KERNEL_SEPARATED_DT    := true
 TARGET_KERNEL_SOURCE         := kernel/samsung/j3ltespr
 #TARGET_KERNEL_CUSTOM_TOOLCHAIN  := arm-eabi-4.7
-TARGET_KERNEL_CONFIG             := msm8916_j3ltespr_eur_defconfig
+TARGET_KERNEL_CONFIG             := j3ltespr_defconfig
 
 # Partition sizes
 TARGET_USERIMAGES_USE_EXT4          := true
@@ -148,9 +148,9 @@ TARGET_QCOM_MEDIA_VARIANT           := caf
 
 # Display
 TARGET_CONTINUOUS_SPLASH_ENABLED      := true
-TARGET_USES_OVERLAY 		          := true
-TARGET_HARDWARE_3D		              := false
-TARGET_HAVE_HDMI_OUT 		          := false
+TARGET_USES_OVERLAY 		      := true
+TARGET_HARDWARE_3D		      := false
+TARGET_HAVE_HDMI_OUT 		      := false
 USE_OPENGL_RENDERER                   := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS       := 3
 MAX_EGL_CACHE_KEY_SIZE                := 12*1024
@@ -158,8 +158,8 @@ MAX_EGL_CACHE_SIZE                    := 2048*1024
 OVERRIDE_RS_DRIVER                    := libRSDriver.so
 
 # Boot animation
-TARGET_SCREEN_WIDTH                 := 540
-TARGET_SCREEN_HEIGHT                := 960
+TARGET_SCREEN_WIDTH                 := 720
+TARGET_SCREEN_HEIGHT                := 1280 
 
 # Recovery
 TARGET_RECOVERY_FSTAB 				:= $(LOCAL_PATH)/rootdir/fstab.qcom
