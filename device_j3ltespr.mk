@@ -44,6 +44,10 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/rootdir/etc/init.qcom.bt.sh:system/etc/init.qcom.bt.sh \
 	$(LOCAL_PATH)/rootdir/etc/init.sec.boot.sh:system/etc/init.sec.boot.sh \
 	$(LOCAL_PATH)/rootdir/ueventd.qcom.rc:root/ueventd.qcom.rc
+
+#twrp
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/rootdir/twrp.fstab:root/etc/recovery.fstab \
 	
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \

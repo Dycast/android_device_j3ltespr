@@ -169,8 +169,9 @@ TARGET_RECOVERY_DENSITY 			:= hdpi
 BOARD_HAS_NO_MISC_PARTITION 		:= true
 BOARD_HAS_NO_SELECT_BUTTON 			:= true
 BOARD_RECOVERY_SWIPE 				:= true
-BOARD_USE_CUSTOM_RECOVERY_FONT 	    := \"roboto_23x41.h\"
+#BOARD_USE_CUSTOM_RECOVERY_FONT 	    := \"roboto_23x41.h\"
 BOARD_USES_MMCUTILS 				:= true
+TW_THEME 					:= landscape_hdpi
 #RECOVERY_VARIANT				    := cm
 
 #Use dlmalloc instead of jemalloc for mallocs
